@@ -1,0 +1,28 @@
+
+
+ // than the balance then deny transaction*/
+        else {
+ 
+            // Print statements
+            System.out.println(name
+                               + " you can not withdraw "
+                               + withdrawal);
+ 
+            System.out.println("your balance is: " + total);
+ 
+            // Making the thread sleep for 1 second after
+            // each transaction failure
+ 
+            // Try block to check for exceptions
+            try {
+                Thread.sleep(1000);
+            }
+ 
+            catch (InterruptedException e) {
+ 
+                e.printStackTrace();
+            }
+        }
+    }
+ 
+    // Method - to deposit money
