@@ -1,0 +1,20 @@
+import java.util.*;
+import java.lang.*;
+class Fdeposit
+{  
+    public static void main(String args[])
+    {
+        
+        double A,P,r,n,t,I;
+        double temp;
+        P=15000;
+        r = 0.05;
+        t=2;
+        n=4;
+        temp=(1+r/n);
+        A=P*Math.pow(temp,(n*t));
+        System.out.println("Fixed deposit: "+ Math.round(A));
+        I=A-P;
+        System.out.println("Interest Earned Amount: "+ Math.round(I));
+    }
+}
